@@ -7,28 +7,43 @@ TypeScript is a programming language that is a superset of JavaScript, which mea
 
 Boolean
   > let isEven: boolean = false;
+
 Number: 1 2 3
+
 BigInt: works for larger number then number type
+
 Symbol
+
 String
 
 //* NOT PRIMITIVE TYPES */
+
 Array: [1,2] collection of values of the same type
+
 Tuple: Allows you to express an array with a fixed number of elements, each with a known type (which need not be the same):
+
 Object Type : Represented through object types, especially when working with structured data
+
 Enum: represents a set of named values, often used to define a collection of related constants.
+
 Void:
   > Generally used on function return-types
+
 Null
   > It is used when an object does not have any value
+
 Undefined:
   > Denotes value given to uninitialized variable
+
 Any:
   > If variable is declared with any data-type then any type of value can be assigned to that variable
   > most flexible type in ts
+
 Unknonwn:
   > safer alternative to any b'coz it stil enforce type checking and safety
-  > variable of type unknonwn can hold value of any type, but you must perform type checks or type assertions before using them in specific ways.
+  > variable of type unknonwn can hold value of any type,'
+    but you must perform type checks or type assertions before using them in specific ways.
+
 Never.
 
 ![image](https://github.com/prince-sunsara/TypeScript-Learning/assets/108970023/bc813b7b-ba4e-4fdf-ae6c-43f0ac3077f4)
@@ -37,7 +52,8 @@ Never.
   > What is Type Annotation in TypeScript
   > TypeScript uses type annotations to explicitly specify types for identifiers such as variables, functions, objects, etc.
   > TypeScript uses the syntax : type after an identifier as the type annotation, which type can be any valid type.
-  > Once an identifier is annotated with a type, it can be used as that type only. If the identifier is used as a different type, the TypeScript compiler will issue an error.
+  > Once an identifier is annotated with a type, it can be used as that type only.
+    If the identifier is used as a different type, the TypeScript compiler will issue an error.
 
 ### TYPE INFERENCE :
     > ability of the ts compiler to automatically determine and 
@@ -113,7 +129,8 @@ Never.
 
 ### TYPE ALIAS
 // way to give a name to a specific type or combination of types
-// allow you to create custom name for a type, making it easier to reduce & refers to the same type in different parts of your code
+// allow you to create custom name for a type, making it easier to reduce & 
+   refers to the same type in different parts of your code
 // provide you better readablility, organization, and abstraction of complex types
 
 type Person = {
