@@ -92,62 +92,63 @@ Never.
 
 ## ARRAY IN TS
   Array:
+  
     > data type in ts that can stores multiple values of different data types sequentially.
     > three ways to defines:
-    1. using []
-    2. using array constructor
-    3. using Array.of method
+      1. using []
+      2. using array constructor
+      3. using Array.of method
 
 ### ARRAY METHODS
-
-//* ARRAY MAP METHOD
-  > it transform each element and return new array
-    console.log(numbers.map((i: number) => i * 2));
-
-//* ARRAY FILTER METHOD
-  > it apply condition on given array and return new array
-    console.log(numbers.filter((i: number) => i > 2));
-
-//* ARRAY REDUCE METHOD
-  > apply method to all elements in array, reduce them in single output and return output
+    
+    //* ARRAY MAP METHOD
+      > it transform each element and return new array
+        console.log(numbers.map((i: number) => i * 2));
+    
+    //* ARRAY FILTER METHOD
+      > it apply condition on given array and return new array
+        console.log(numbers.filter((i: number) => i > 2));
+    
+    //* ARRAY REDUCE METHOD
+      > apply method to all elements in array, reduce them in single output and return output
 
 ## OBJECT
-  > key: value, different types
-
-// const person: {
-//   name: string;
-//   age: number;
-//   address: { village: string; state: string };
-// } = {
-//   name: "prince",
-//   age: 23,
-//   address: {
-//     village: "manund",
-//     state: "Gujarat",
-//   },
-// };
+    > key: value, different types
+    
+    // const person: {
+    //   name: string;
+    //   age: number;
+    //   address: { village: string; state: string };
+    // } = {
+    //   name: "prince",
+    //   age: 23,
+    //   address: {
+    //     village: "manund",
+    //     state: "Gujarat",
+    //   },
+    // };
 
 ### TYPE ALIAS
-// way to give a name to a specific type or combination of types
-// allow you to create custom name for a type, making it easier to reduce & 
-   refers to the same type in different parts of your code
-// provide you better readablility, organization, and abstraction of complex types
-
-type Person = {
-  name: string;
-  age: number;
-  address: { village: string; state: string };
-};
-
-const person: Person = {
-  name: "prince",
-  age: 23,
-  address: {
-    village: "manund",
-    state: "Gujarat",
-  },
-};
-
+    // way to give a name to a specific type or combination of types
+    // allow you to create custom name for a type, making it easier to reduce & 
+       refers to the same type in different parts of your code
+    // provide you better readablility, organization, and abstraction of complex types
+    
+    type Person = {
+      name: string;
+      age: number;
+      address: { village: string; state: string };
+    };
+    
+    const person: Person = {
+      name: "prince",
+      age: 23,
+      address: {
+        village: "manund",
+        state: "Gujarat",
+      },
+    };
+    
 ### FUNCTION/METHOD CALL SIGNATURE
     >   Declaration or Definition of a function, which includes the function name,return type, parameters
     >   Defines the structure and type information of a function without including the function's implementation or body
@@ -161,8 +162,8 @@ const person: Person = {
       };
 
 ## ENUMS TYPE
-  > commonly used when you want to represent a set of related values and choose one value from multiple option
-  > provide convenient way to define set of named value and associate them with specific meaning.
+    > commonly used when you want to represent a set of related values and choose one value from multiple option
+    > provide convenient way to define set of named value and associate them with specific meaning.
       
       enum Roles {
         admin = "admin",
@@ -212,7 +213,7 @@ const person: Person = {
 
 type EmployeeDetails = Person & Employee;
 
-//* badhe badhu lkhvu pade * necessary chhe
+    //* badhe badhu lkhvu pade * necessary chhe
    
     const emp: EmployeeDetails = {
       emp_id: 123,
@@ -305,7 +306,7 @@ type EmployeeDetails = Person & Employee;
 
 ## OBJECT ORIENTED PROGRAMMING IN TYPESCRIPT
 
-  ### CLASS : blueprint for creating objects
+### CLASS : blueprint for creating objects
     > to name a class use PascalCase
     
     // class Person {
